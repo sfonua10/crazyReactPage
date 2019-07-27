@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ConvertCtoF from './ConvertCtoF';
-
+import ConvertCtoF from './FCC/ConvertCtoF';
+import ReverseAString from './FCC/ReverseAString';
 function App() {
   return (
     <div className="App">
-    <ConvertCtoF />
+      <ConvertCtoF />
+      <ReverseAString />
     </div>
   );
 }

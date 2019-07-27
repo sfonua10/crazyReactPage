@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 
 const ConvertCtoF = () => {
   let [celsius, setCelsius] = useState();
