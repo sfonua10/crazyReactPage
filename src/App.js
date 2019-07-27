@@ -1,25 +1,14 @@
-import React, { useState } from "react";
-import "./App.css";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import ConvertCtoF from './ConvertCtoF';
 
-const App = () => {
-  let [celsius, setFahrenheit] = useState();
-
-  const handleChange = event => {
-    setFahrenheit((celsius = event.target.value));
-  };
-  const handleFahrenheit = () => {
-    const fahrenheit = celsius * (9/5) + 32;
-    setFahrenheit(fahrenheit);
-  };
-  const fahrenheit = celsius * (9/5) + 32;
+function App() {
   return (
     <div className="App">
-      <h1>Type in number and click button to see Fahrenheit results</h1>
-      <input type="text" value={celsius} onChange={handleChange} />
-      <button onClick={handleFahrenheit}>Click Me</button>
-      <h1>{fahrenheit}</h1>
+    <ConvertCtoF />
     </div>
   );
-};
+}
 
 export default App;
